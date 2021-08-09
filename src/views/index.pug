@@ -1,0 +1,16 @@
+extends layouts/default
+include helpers/mixins
+
+block variables
+    -
+        var
+            title = "laravel-mix"
+
+block content
+    include ../../node_modules/bemto.pug/bemto.pug
+    +b.w-2
+
+block scripts
+    script(src="js/manifest.js")
+    script(src="js/vendor.js")
+    script(src="js/index.js")
